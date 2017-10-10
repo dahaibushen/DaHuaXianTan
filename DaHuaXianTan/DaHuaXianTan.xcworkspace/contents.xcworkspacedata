@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OTSCommon/OTSCommon.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DaHuaXianTan.xcodeproj">
    </FileRef>
    <FileRef
