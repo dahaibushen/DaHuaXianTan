@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor orangeColor];
+    NSMutableArray *arr = @[].mutableCopy;
+    for (int i=0; i<4; i++) {
+        [arr addObject:nil];
+    }
 }
 
 

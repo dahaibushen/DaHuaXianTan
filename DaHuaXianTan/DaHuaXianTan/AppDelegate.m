@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Bugly/Bugly.h>
 
 @interface AppDelegate ()
 
@@ -16,8 +17,53 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//    BuglyConfig * config = [[BuglyConfig alloc] init];
+//    // 设置自定义日志上报的级别，默认不上报自定义日志
+//    config.reportLogLevel = BuglyLogLevelWarn;
+//    
+//    [Bugly startWithAppId:@"764a19b3d6" config:config];
+    
+    [self initBugly];
     return YES;
+}
+-(void)initBugly{
+    // Get the default config
+    BuglyConfig * config = [[BuglyConfig alloc] init];
+    
+    //SDK Debug信息开关, 默认关闭
+    config.debugMode = YES;
+    //卡顿监控开关，默认关闭
+    config.blockMonitorEnable = YES;
+    
+    //卡顿监控判断间隔，单位为秒
+    config.blockMonitorTimeout = 1.5;
+    
+//    config.delegate = self;
+    
+    //控制台日志上报开关，默认开启
+    config.consolelogEnable = NO;
+    
+    //页面信息记录开关，默认开启
+    config.viewControllerTrackingEnable = YES;
+    
+#if DEBUG
+    // 设置自定义渠道标识  开发环境
+    config.channel = @"Development";
+    [Bugly startWithAppId:@"764a19b3d6" developmentDevice:YES config:config];
+    
+#else
+    // 设置自定义渠道标识  线上环境
+    config.channel = @"Product";
+    [Bugly startWithAppId:@"764a19b3d6" developmentDevice:NO config:config];
+    
+#endif
+    
+    
+    [Bugly setUserIdentifier:[NSString stringWithFormat:@"User: %@", [UIDevice currentDevice].name]];
+    
+    [Bugly setUserValue:[NSProcessInfo processInfo].processName forKey:@"Process"];
+    
+    //[self performSelectorInBackground:@selector(testLogOnBackground) withObject:nil];
 }
 
 

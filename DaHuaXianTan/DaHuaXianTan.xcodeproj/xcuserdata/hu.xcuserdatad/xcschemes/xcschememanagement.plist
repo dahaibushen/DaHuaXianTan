@@ -7,7 +7,25 @@
 		<key>DaHuaXianTan.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0F3801F51E4CAE3B00676EE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0F38020E1E4CAE3C00676EE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0F3802191E4CAE3C00676EE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
