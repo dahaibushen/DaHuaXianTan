@@ -47,7 +47,7 @@
     config.viewControllerTrackingEnable = YES;
     
 #if DEBUG
-    // 设置自定义渠道标识  开发环境
+    // 设置自定义渠道标识  开发环uu境
     config.channel = @"Development";
     [Bugly startWithAppId:@"764a19b3d6" developmentDevice:YES config:config];
     

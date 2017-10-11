@@ -8,7 +8,7 @@
 
 #import "UIView+loading.h"
 #import "MBProgressHUD.h"
-#import <OTSCore/OTSCore.h>
+#import "NSObject+Runtime.h"
 
 @implementation UIView (loading)
 

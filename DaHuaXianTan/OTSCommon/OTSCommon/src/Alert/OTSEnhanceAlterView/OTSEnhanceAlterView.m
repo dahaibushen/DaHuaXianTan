@@ -7,7 +7,8 @@
 //
 
 #import "OTSEnhanceAlterView.h"
-#import <OTSCore/UIColor+Convenience.h>
+//#import <OTSCore/UIColor+Convenience.h>
+#import "UIColor+Convenience.h"
 
 #define ALLineColorOfGray hex(0xa7afbb)
 #define ALLineColorOfBlue hex(0x83b3f6)

@@ -14,7 +14,9 @@ FOUNDATION_EXPORT double OTSCommonVersionNumber;
 //! Project version string for OTSCommon.
 FOUNDATION_EXPORT const unsigned char OTSCommonVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <OTSCommon/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <OTSCommon/PublicHeader.h>c
 
 #import "UIColor+Convenience.h"
 #import "OTSEnlargeButton.h"
+//#import "UIScrollView+PullRefresh.h"
+#import "UIScrollView+AddRefresh.h"

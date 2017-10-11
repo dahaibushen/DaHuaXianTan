@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <OTSCore/UIView+Frame.h>
+//#import <OTSCore/UIView+Frame.h>
+#import "UIView+Frame.h"
 
 @class OTSEnhanceAlterView;
 @protocol OTSEnhanceAlertViewDelegate <NSObject>

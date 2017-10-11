@@ -6,7 +6,8 @@
 //  Copyright (c) 2014年 OneStore. All rights reserved.
 //
 
-#import <PureLayout/PureLayout.h>
+//#import <PureLayout/PureLayout.h>
+#import <UIKit/UIKit.h>
 
 @interface UIView (create)
 

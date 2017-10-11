@@ -7,29 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OTSRefreshHeaderView.h"
-#import "OTSRefreshFooterView.h"
+//#import "OTSRefreshHeaderView.h"
+//#import "OTSRefreshFooterView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIScrollView (PullRefresh)
 
-@property (nonatomic, strong, nullable) OTSRefreshHeaderView *refreshHeader;
-@property (nonatomic, strong, nullable) OTSRefreshFooterView *refreshFooter;
+//@property (nonatomic, strong, nullable) OTSRefreshHeaderView *refreshHeader;
+//@property (nonatomic, strong, nullable) OTSRefreshFooterView *refreshFooter;
 
 //content class should confirm to OTSRefreshContentViewProtocol
-- (void)addRefreshHeaderWithBlock:(OTSRefreshHeaderBlock)aBlock contentClass:(Class)contentClass;
-- (void)addLoadMoreFooterWithBlock:(OTSRefreshFooterBlock)aBlock contentClass:(Class)contentClass;
+//- (void)addRefreshHeaderWithBlock:(OTSRefreshHeaderBlock)aBlock contentClass:(Class)contentClass;
+- (void)addLoadMoreFooterWithBlock:(id)aBlock contentClass:(Class)contentClass;
 
-- (void)triggerRefreshing;
-
-- (void)headerActionSuccessfully;
-- (void)footerActionSuccessfully;
-
-- (void)headerActionError:(NSString*)errorMsg;
-- (void)footerActionError:(NSString*)errorMsg;
-
-- (void)footerActionPause:(NSString*)pauseMsg;
+//- (void)triggerRefreshing;
+//
+//- (void)headerActionSuccessfully;
+//- (void)footerActionSuccessfully;
+//
+//- (void)headerActionError:(NSString*)errorMsg;
+//- (void)footerActionError:(NSString*)errorMsg;
+//
+//- (void)footerActionPause:(NSString*)pauseMsg;
 
 @end
 
