@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char OTSCommonVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <OTSCommon/PublicHeader.h>
 
-
+#import "UIColor+Convenience.h"
+#import "OTSEnlargeButton.h"

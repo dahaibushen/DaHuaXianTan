@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <OTSCommon/OTSCommon.h>
+
+
 
 @interface ViewController ()
 
@@ -16,10 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSMutableArray *arr = @[].mutableCopy;
-    for (int i=0; i<4; i++) {
-        [arr addObject:nil];
-    }
+    OTSEnlargeButton *button = [OTSEnlargeButton new];
+    [self.view addSubview:button];
+    button.frame = CGRectMake(120, 120, 120, 120);
+    button.backgroundColor = [UIColor colorWithRGB:0x343233];
+    
 }
 
 
